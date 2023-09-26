@@ -6,9 +6,9 @@ public class Aula03TiposPrimitivosExercicios {
         String endereco = "Travessa piraque";
         String dataDeRecebimento = "20/09/2022";
         double salarioDouble = 2.000;
-        String relatorio = "Eu "+nome+", morando no endereço "+endereco+", confirmo que recebi o salario no valor de "+salarioDouble+" na data de "+dataDeRecebimento;
+        String relatorio = "Eu " + nome + ", morando no endereço " + endereco + ", confirmo que recebi o salario no valor de " + salarioDouble + " na data de " + dataDeRecebimento;
 
         System.out.println(relatorio);
-        System.out.println("Eu "+nome+", morando no endereço "+endereco+", confirmo que recebi o salario no valor de "+salarioDouble+" na data de "+dataDeRecebimento);
+        System.out.println("Eu " + nome + ", morando no endereço " + endereco + ", confirmo que recebi o salario no valor de " + salarioDouble + " na data de " + dataDeRecebimento);
     }
 }

@@ -16,9 +16,9 @@ public class Aula02TiposPrimitivos {
         int idadeCasting = (int) 10000000000L;
         float salarioCasting = (float) 2.500D;
 
-        System.out.println("A idade é: "+idade+" anos");
-        System.out.println("A idade é: "+caractere+" anos");
-        System.out.println("Exemplo de casting Long para int : "+idadeCasting);
-        System.out.println("Casting de um double para float: "+salarioCasting);
+        System.out.println("A idade é: " + idade + " anos");
+        System.out.println("A idade é: " + caractere + " anos");
+        System.out.println("Exemplo de casting Long para int : " + idadeCasting);
+        System.out.println("Casting de um double para float: " + salarioCasting);
     }
 }

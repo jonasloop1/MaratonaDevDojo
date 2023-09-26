@@ -50,7 +50,7 @@ public class Aula04Operadores {
         double valorTotalDaContaPoupanca = 10000;
         float valorTotalPs5 = 5000f;
         boolean isPlaystationCincoCompravel = valorTotalDaContaCorrente > valorTotalPs5 || valorTotalDaContaPoupanca > valorTotalPs5;
-        System.out.println("Consigo compra um PS5? "+isPlaystationCincoCompravel);
+        System.out.println("Consigo compra um PS5? " + isPlaystationCincoCompravel);
 
         // = += -= *= /= %= Operadores Atribuições
         double bonus = 1800;
@@ -60,7 +60,7 @@ public class Aula04Operadores {
         bonus /= 2;
         bonus %= 2;
         System.out.println("\nOperadores de Atribuições:");
-        System.out.println("Valor usando operadores de atribuição: "+bonus);
+        System.out.println("Valor usando operadores de atribuição: " + bonus);
 
         // Valores de incrementação e decrementação -- ++
         int contador = 0;
@@ -71,9 +71,9 @@ public class Aula04Operadores {
         ++contador;
         --contador;
         System.out.println("\nOperadores de incremento e decremento:");
-        System.out.println("Resultado: "+contador);
+        System.out.println("Resultado: " + contador);
         System.out.println("\nExemplo colocando o operador antes e depois:");
-        System.out.println("Com o incrementador depois da vareavel: "+contador2++);
-        System.out.println("Valor depois do incremento: "+contador2);
+        System.out.println("Com o incrementador depois da vareavel: " + contador2++);
+        System.out.println("Valor depois do incremento: " + contador2);
     }
 }
