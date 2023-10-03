@@ -19,6 +19,7 @@ public class Aula02TiposPrimitivos {
         System.out.println("A idade é: " + idade + " anos");
         System.out.println("A idade é: " + caractere + " anos");
         System.out.printf("Meu salário é: %.3f", salarioFloat);
+        System.out.println("Número Grande (LONG): "+numeroGrande);
         System.out.println("\nExemplo de casting Long para int : " + idadeCasting);
         System.out.println("Casting de um double para float: " + salarioCasting);
     }
