@@ -2,7 +2,7 @@ package academy.devdojo.maratonajava.introducao;
 
 public class Aula04Operadores {
     public static void main(String[] args) {
-        // + - * / Operadores Aritméticos
+        // + - * / Operadores Aritméticos:
         int num1 = 10;
         int num2 = 20;
         double num3 = 10;
@@ -13,14 +13,14 @@ public class Aula04Operadores {
         System.out.println("Soma de números: " + resultado1);
         System.out.println("Divisão de números: " + resultado2);
 
-        // % Operadores Relacionais 1
+        // % Operadores Relacionais 1:
         int resto = 20 % 2;
         int resto1 = 21 % 6;
         System.out.println("\nOperadores Relacionais 1:");
         System.out.println("Divisão entre números para encontrar o resto: " + resto);
         System.out.println("Divisão entre números para encontrar o resto: " + resto1);
 
-        // < > <= >= == != Operadores Relacionais 2 - retonar valores booleanos
+        // < > <= >= == != Operadores Relacionais 2 - retonar valores booleanos:
         boolean isDezMaiosQueVinte = 10 > 20;
         boolean isDezMenorQueVinte = 10 < 20;
         boolean isDezMaiorIgualQueVinte = 10 >= 20;
@@ -37,7 +37,7 @@ public class Aula04Operadores {
         System.out.println("isDezMaiorIgualQueVinte: " + isDezMaiorIgualQueVinte);
         System.out.println("isDezMenorIgualVinte: " + isDezMenorIgualVinte);
 
-        // && || ! Operadores Lógicos
+        // && || ! Operadores Lógicos:
         int idade = 29;
         float salario = 3500f;
         boolean isDentroDaLeiMaiorQueTrinta = idade >= 30 && salario >= 4612;
@@ -52,7 +52,7 @@ public class Aula04Operadores {
         boolean isPlaystationCincoCompravel = valorTotalDaContaCorrente > valorTotalPs5 || valorTotalDaContaPoupanca > valorTotalPs5;
         System.out.println("Consigo compra um PS5? " + isPlaystationCincoCompravel);
 
-        // = += -= *= /= %= Operadores Atribuições
+        // = += -= *= /= %= Operadores Atribuições:
         double bonus = 1800;
         bonus += 1000;
         bonus -= 1000;
