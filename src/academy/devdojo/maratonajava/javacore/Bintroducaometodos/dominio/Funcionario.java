@@ -6,10 +6,10 @@ public class Funcionario {
     public double[] salario;
 
     public void imprimeDados() {
-        System.out.println("Nome: "+this.nome);
-        System.out.println("Idade: "+this.idade);
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Idade: " + this.idade);
         for (double baseSalario : salario) {
-            System.out.println("Salario: "+baseSalario);
+            System.out.println("Salario: " + baseSalario);
         }
     }
 
