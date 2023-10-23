@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Eblocosinicializacao.dominio;
 public class Anime {
     private String nome;
     private int[] episodios;
-    //Criando um objeto:
+    //Criando um objeto passos:
     //1- Criado um espaço em memória para o obejeto;
     //2- Cada atributo de classe é criado e inicializado com valores default ou o que for passado;
     //3- bloco de inicialização, executado primeiro que o próprio construtor;
