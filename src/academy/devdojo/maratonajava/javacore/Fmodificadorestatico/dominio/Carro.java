@@ -3,7 +3,8 @@ package academy.devdojo.maratonajava.javacore.Fmodificadorestatico.dominio;
 public class Carro {
     private String nome;
     private double velocidadeMaxima;
-    public static double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
+
     //Modificador estatico afeta todos os objetos de uma classe, ou seja,
     //aquele atributo especifico vai pertencer a classe!
     public Carro(String nome, double velocidadeMaxima) {
@@ -11,11 +12,20 @@ public class Carro {
         this.velocidadeMaxima = velocidadeMaxima;
     }
 
-    public void imprime(){
+    public void imprime() {
         System.out.println("----------------");
-        System.out.println("Nome: "+this.nome);
-        System.out.println("Velocidade maxima: "+this.velocidadeMaxima+" KM");
-        System.out.println("Velocidade limite: "+Carro.velocidadeLimite+" KM");
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Velocidade maxima: " + this.velocidadeMaxima + " KM");
+        System.out.println("Velocidade limite: " + Carro.velocidadeLimite + " KM");
+    }
+
+    //Métodos estaticos não podem acessar variaveis sem ser estaticos (variaveis de instacia)!
+    public static void setVelocidadeLimite(double velocidadeLimite) {
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+
+    public static double getVelocidadeLimite() {
+        return Carro.velocidadeLimite;
     }
 
     public String getNome() {
@@ -32,13 +42,5 @@ public class Carro {
 
     public void setVelocidadeMaxima(double velocidadeMaxima) {
         this.velocidadeMaxima = velocidadeMaxima;
-    }
-
-    public double getVelocidadeLimite() {
-        return velocidadeLimite;
-    }
-
-    public void setVelocidadeLimite(double velocidadeLimite) {
-        this.velocidadeLimite = velocidadeLimite;
     }
 }
