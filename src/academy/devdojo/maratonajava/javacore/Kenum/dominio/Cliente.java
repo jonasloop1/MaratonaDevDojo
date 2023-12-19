@@ -1,9 +1,10 @@
 package academy.devdojo.maratonajava.javacore.Kenum.dominio;
 
 public class Cliente {
-    public enum TipoPagamento{
+    public enum TipoPagamento {
         DEBITO, CREDITO
     }
+
     private String nome;
     private TipoCliente tipoCliente;
     private TipoPagamento tipoPagamento;
@@ -18,8 +19,8 @@ public class Cliente {
     public String toString() {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
-                ", tipoCliente=" + tipoCliente +
-                ", tipoClienteInt=" + tipoCliente.VALOR +
+                ", tipoCliente=" + tipoCliente.getNomeRelatorio() +
+                ", tipoClienteInt=" + tipoCliente.getVALOR() +
                 ", tipoPagamento=" + tipoPagamento +
                 '}';
     }
