@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Lclassesabstratas.dominio;
 
-public abstract class Funcionario {
+public abstract class Funcionario extends Pessoa {
     protected String nome;
     protected double salario;
 
@@ -8,6 +8,11 @@ public abstract class Funcionario {
         this.nome = nome;
         this.salario = salario;
         calcularBonus();
+    }
+
+    @Override
+    public void imprime() {
+        System.out.println("Imprimindo...");
     }
 
     public abstract void calcularBonus();
@@ -20,3 +25,7 @@ public abstract class Funcionario {
                 '}';
     }
 }
+//Em uma classe abstrata não se pode criar nada concreto!
+//Esse tipo de classe não pode ser instanciada.
+//Serve como um template.
+//
