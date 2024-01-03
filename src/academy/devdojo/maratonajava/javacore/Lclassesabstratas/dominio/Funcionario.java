@@ -25,7 +25,7 @@ public abstract class Funcionario extends Pessoa {
                 '}';
     }
 }
-//Em uma classe abstrata não se pode criar nada concreto!
+//Em uma classe abstrata pode ter métodos concretos(normais) e abstratos!
 //Esse tipo de classe não pode ser instanciada.
 //Serve como um template.
-//
+//Métodos abstratos só funcionam em classes abstratas.
