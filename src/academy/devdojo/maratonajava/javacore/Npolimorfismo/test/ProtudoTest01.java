@@ -9,8 +9,8 @@ public class ProtudoTest01 {
         Computador computador = new Computador("NUC10i7", 10000);
         Tomate tomate = new Tomate("Tomate verde", 20);
 
-        CalculadoraImposto.calculadoraImpostoComputador(computador);
+        CalculadoraImposto.calculadoraImposto(computador);
         System.out.println("------------------------");
-        CalculadoraImposto.calculadoraImpostoTomate(tomate);
+        CalculadoraImposto.calculadoraImposto(tomate);
     }
 }
