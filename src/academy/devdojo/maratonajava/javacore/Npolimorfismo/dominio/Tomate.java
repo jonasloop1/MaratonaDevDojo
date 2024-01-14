@@ -1,7 +1,5 @@
 package academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio;
 
-import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Produto;
-
 public class Tomate extends Produto {
     private String dataValidade;
     public static final double IMPOSTO_POR_CENTO = 0.06;
