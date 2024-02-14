@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Oexception.runtime.test;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.SQLException;
 
 public class RuntimeExceptionTest04 {
@@ -27,9 +28,21 @@ public class RuntimeExceptionTest04 {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+        try {
+            talvezLanceException2();
+        } catch (IndexOutOfBoundsException | IllegalArgumentException e) {
+            e.printStackTrace();
+        }
+        //Multi catch em linha, não pode estar na mesma linha de herança!
+        //ex: IOException E FileNotFoundException estão na mesma linha de herança!
     }
 
     private static void talvezLanceException() throws SQLException, FileNotFoundException {
         System.out.println("Dentro do método talvezLanceException");
+    }
+
+    private static void talvezLanceException2() throws IndexOutOfBoundsException, IllegalArgumentException {
+        System.out.println("Dentro do método talvezLanceException2");
     }
 }
