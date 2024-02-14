@@ -13,6 +13,7 @@ public class LoginInvalidoExceptionTest01 {
             throw new RuntimeException(e);
         }
     }
+
     private static void logar() throws LoginInvalidoException {
         Scanner teclado = new Scanner(System.in);
 
@@ -24,8 +25,8 @@ public class LoginInvalidoExceptionTest01 {
         System.out.println("Senha:");
         String senhaDigitado = teclado.nextLine();
 
-        if (!userNameDB.equals(userNameDigitado) || !senhaDB.equals(senhaDigitado)){
-            throw new LoginInvalidoException("Usuário ou senha inválido");
+        if (!userNameDB.equals(userNameDigitado) || !senhaDB.equals(senhaDigitado)) {
+            throw new LoginInvalidoException();
         }
         System.out.println("Usuário logado com sucesso");
     }
