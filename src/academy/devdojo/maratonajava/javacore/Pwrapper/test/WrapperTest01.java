@@ -20,5 +20,25 @@ public class WrapperTest01 {
         Double doubleW = 12D;
         Character charW = 'a';
         Boolean booleanW = false;
+
+        Integer intW2 = Integer.parseInt("1");
+        boolean verdade = Boolean.parseBoolean("True");
+        System.out.println("Integer.parseInt 1: "+intW2);
+        System.out.println("Boolean.parseBoolean True: "+verdade);
+
+        System.out.println("\nMétodos ultilitários da classe Character:");
+        System.out.println("\nisDigit A: "+Character.isDigit('A'));
+        System.out.println("isDigit 4: "+Character.isDigit('4'));
+        System.out.println("\nisLetterOrDigit !: "+Character.isLetterOrDigit('!'));
+        System.out.println("isUpperCase A: "+Character.isUpperCase('A'));
+        System.out.println("isLowerCase a: "+Character.isLowerCase('a'));
+        System.out.println("\nisUpperCase a: "+Character.toUpperCase('a'));
+        System.out.println("isLowerCase A: "+Character.toLowerCase('A'));
     }
 }
+//autoboxing - TIPO PRIMITIVO PARA UM WRAPPER
+//Integer integer = 9;
+//
+//unboxing - WRAPPER PARA UM TIPO PRIMITIVO
+//int in = 0;
+//in = new Integer(9);
