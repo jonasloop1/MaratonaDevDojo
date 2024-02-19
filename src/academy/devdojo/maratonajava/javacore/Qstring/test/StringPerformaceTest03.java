@@ -1,9 +1,10 @@
 package academy.devdojo.maratonajava.javacore.Qstring.test;
+
 /*
-* @Jonas Silva
-* @Jonasloop1@gmail.com
-*
-* */
+ * @Jonas Silva
+ * @Jonasloop1@gmail.com
+ *
+ * */
 public class StringPerformaceTest03 {
     public static void main(String[] args) {
         long inicio = System.currentTimeMillis();
