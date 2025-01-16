@@ -22,6 +22,10 @@ bin/
 /nbdist/
 /.nb-gradle/
 
+### Ignore git ###
+.idea
+MaratonaDevDojo.iml
+
 ### VS Code ###
 .vscode/
 
