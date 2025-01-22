@@ -2,6 +2,7 @@ package academy.devdojo.maratonajava.javacore.Pwrapper.test;
 
 public class WrapperTest01 {
     public static void main(String[] args) {
+        //Tipos primitivos - Bits
         byte byteP = 127;
         short shortP = 1;
         int intP = 1;
@@ -11,7 +12,7 @@ public class WrapperTest01 {
         char charP = 'a';
         boolean booleanP = false;
 
-        //Classes Utilitárias - Wrappers
+        //Classes Utilitárias - Wrappers - Objetos
         Byte byteW = 127;
         Short shortW = 1;
         Integer intW = 1;
