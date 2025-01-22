@@ -11,6 +11,8 @@ public class StringPerformaceTest03 {
         concatString(10000);
         long fim = System.currentTimeMillis();
 
+        System.out.println("\nTempo máximo para executar 1000000 vezes a string no sistema\n");
+
         System.out.println("Tempo gasto para executar a String: " + (fim - inicio) + "ms");
 
         inicio = System.currentTimeMillis();
@@ -34,6 +36,8 @@ public class StringPerformaceTest03 {
         }
     }
 
+    //StringBiulder e StringBuffer são parecidos, possuindo os mesmos métodos.
+    //Diferença é que StringBiulder foi criado para ambientes multi threds!
     private static void concatStringBuilder(int tamanho) {
         StringBuilder sb = new StringBuilder(tamanho);
         for (int i = 0; i < tamanho; i++) {
