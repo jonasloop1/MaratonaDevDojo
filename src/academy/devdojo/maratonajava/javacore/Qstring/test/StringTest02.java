@@ -1,5 +1,11 @@
 package academy.devdojo.maratonajava.javacore.Qstring.test;
 
+/*
+ * @Jonas Silva
+ * @Jonasloop1@gmail.com
+ *
+ * */
+
 public class StringTest02 {
     public static void main(String[] args) {
         String nome = " goku  ";
