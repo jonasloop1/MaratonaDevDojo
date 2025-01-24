@@ -1,11 +1,15 @@
 package academy.devdojo.maratonajava.javacore.Rdatas;
-
+/*
+ * @Jonas Silva
+ * @Jonasloop1@gmail.com
+ *
+ * */
 import java.text.DateFormat;
 import java.util.Calendar;
 
 public class DateFormatTest01 {
     public static void main(String[] args) {
-        //Dateformat é um classe abstrata com isso não se pode instânciar com new, porém com a ultilização do Array sim
+        //Dateformat é uma classe abstrata, com isso não se pode instânciar com new, somente com a ultilização do Array!
         Calendar c = Calendar.getInstance();
         DateFormat[] df = new DateFormat[7];
 
