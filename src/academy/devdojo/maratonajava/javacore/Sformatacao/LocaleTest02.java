@@ -1,5 +1,8 @@
 package academy.devdojo.maratonajava.javacore.Sformatacao;
-
+/*
+ * @Jonas Silva
+ * @Jonasloop1@gmail.com
+ * */
 import java.util.Locale;
 
 public class LocaleTest02 {
