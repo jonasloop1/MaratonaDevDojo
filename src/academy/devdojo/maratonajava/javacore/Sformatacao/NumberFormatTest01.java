@@ -25,6 +25,5 @@ public class NumberFormatTest01 {
         for (NumberFormat numberFormat : nfa) {
             System.out.println(numberFormat.format(valor));
         }
-
     }
 }
