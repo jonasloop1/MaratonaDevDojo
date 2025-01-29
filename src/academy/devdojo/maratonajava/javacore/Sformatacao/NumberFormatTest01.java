@@ -4,7 +4,9 @@ package academy.devdojo.maratonajava.javacore.Sformatacao;
  * @Jonasloop1@gmail.com
  * @param
  * */
+
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Locale;
 
 public class NumberFormatTest01 {
@@ -23,7 +25,15 @@ public class NumberFormatTest01 {
         double valor = 10_000.3232;
         System.out.println("\nFormatação pra números de acordo com cada pais:\n");
         for (NumberFormat numberFormat : nfa) {
+            System.out.println(numberFormat.getMaximumFractionDigits()); //Retorna o número de casas decimais depois da virgula
             System.out.println(numberFormat.format(valor));
+        }
+        String valorString = "1000.2130";
+
+        try {
+            System.out.println("\nUtilizando parse de String -> númerico: " + nfa[0].parse(valorString));
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
         }
     }
 }
