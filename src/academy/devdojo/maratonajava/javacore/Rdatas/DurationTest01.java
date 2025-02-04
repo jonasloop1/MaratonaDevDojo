@@ -9,6 +9,7 @@ package academy.devdojo.maratonajava.javacore.Rdatas;
  * Baseado em milissegundos e nanossegundos!
  *
  * */
+
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -30,14 +31,14 @@ public class DurationTest01 {
         Duration d5 = Duration.ofMinutes(20);
         Duration d6 = Duration.of(5, ChronoUnit.HOURS);
 
-        System.out.println("\nQuantidade de dias, horas e nanossgundo que se pasaram: "+d1);
-        System.out.println("Diferença entre as horas, quantidade: "+d2);
-        System.out.println("Diferença de minutos: "+d3);
+        System.out.println("\nQuantidade de dias, horas e nanossgundo que se pasaram: " + d1);
+        System.out.println("Diferença entre as horas, quantidade: " + d2);
+        System.out.println("Diferença de minutos: " + d3);
 
         System.out.println("\nOutros métodos, Duration retorna horas, minutos e segundos:");
-        System.out.println("20 dias em horas: "+d4);
-        System.out.println("20 dias em horas: "+d5);
-        System.out.println("20 dias em horas: "+d6);
+        System.out.println("20 dias em horas: " + d4);
+        System.out.println("20 dias em horas: " + d5);
+        System.out.println("20 dias em horas: " + d6);
 
         System.out.println("\nAtenção: a classe Duration não aceita LocalDate, porque localDate não tem suporte para segundos!");
     }
