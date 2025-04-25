@@ -21,7 +21,7 @@ class ListAllFiles extends SimpleFileVisitor<Path> {
     @Override
     public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
         System.out.println("Pre visualização: " + dir.getFileName());
-        return FileVisitResult.CONTINUE;
+        return FileVisitResult.SKIP_SUBTREE;
     }
 
     @Override
