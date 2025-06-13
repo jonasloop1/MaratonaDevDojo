@@ -4,6 +4,8 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.dominio;
  * @author Jonas Silva
  * @e-mail: Jonasloop1@gmail.com
  * @param Coleções.
+ * HashCode é um número gerado, de preferência único para um objeto.
+ * Quando o hashCode é implementado, ele tem que dar match com equals.
  *
  * */
 public class Smartphone {
@@ -27,6 +29,15 @@ public class Smartphone {
         if (this.getClass() != obj.getClass()) return false;
         Smartphone smartphone = (Smartphone) obj;
         return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
+    }
+
+    //Se x.equals(y) == true, y.hashCode() == x.hashCode();
+    //y.hashCode() == x.hashCode(), não necessariamente o equals de y.equals(x) tem que ser true;
+    //x.equals(y) == false, o hashCode tem que ser diferente;
+    //y.hashCode != x.hashCode, x.equals(y) deverá ser false.
+    @Override
+    public int hashCode() {
+        return serialNumber == null ? 0 : this.serialNumber.hashCode();
     }
 
     public String getSerialNumber() {
