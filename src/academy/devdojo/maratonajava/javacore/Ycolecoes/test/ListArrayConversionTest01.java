@@ -36,10 +36,14 @@ public class ListArrayConversionTest01 {
         System.out.println("--- Convertendo um Array para uma Lista, sem link entre o arrayList e o Array: ---");
 
         List<Integer> numerosList = new ArrayList<>(Arrays.asList(numerosArray));//Desse forma o link entre o Array e a lista é quebrada
-        numerosList.add(22);
+        numerosList.add(3, 22);
+        numerosList.add(4, 67);
+        numerosList.add(5, 100);
         System.out.println(numerosList);
 
+        //Criando lista em uma unica linha:
 //        Arrays.asList("p");
-        List.of("Jonas"); //Faz a mesma coisa do Arrays.asList("p");
+        List<String> nomes = List.of("Jonas", "João", "Rafael");//Faz a mesma coisa do Arrays.asList("p");
+        System.out.println("\n Lista de nomes: " + nomes);
     }
 }
